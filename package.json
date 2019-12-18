@@ -1,0 +1,25 @@
+{
+  "name": "graph-contact",
+  "version": "1.0.0",
+  "description": "Simple Contact Manager App. This is the backend, built with Node, Express and GraphQL.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yvesalex/graph-contact.git"
+  },
+  "keywords": [
+    "contacts",
+    "node",
+    "express",
+    "graphql"
+  ],
+  "author": "Yves Alexandre Cadet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yvesalex/graph-contact/issues"
+  },
+  "homepage": "https://github.com/yvesalex/graph-contact#readme"
+}
