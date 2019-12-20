@@ -6,7 +6,10 @@ const authService = require('../services/auth');
 const permissionService = require('../services/permissions');
 const ERR = require('../utils/errors');
 const { SALT_ROUNDS } = require('../.config');
-const Company = require('../models/company');
+const User = require('../models/user');
+const Contact = require('../models/contact');
+const Email = require('../models/email');
+const Phone = require('../models/phone');
 
 const {
     SessionExpiredError,
