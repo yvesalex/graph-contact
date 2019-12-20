@@ -6,7 +6,7 @@ Simple Contacts Manager
 @Year: 2019
 
 @Version: 1.0.0
-*****************************************
+
 
 ## Installation
 ### Dependencies
@@ -16,15 +16,15 @@ Simple Contacts Manager
 
 `npm install jsonwebtoken cors`
 
-### If you're on windows, you will need to open Command Line under Administrator's role and execute these commands:
+#### If you're on windows, you will need to open Command Line under Administrator's role and execute these commands:
 `npm install --global --production windows-build-tools`
 
 `npm install bcrypt`
 
+## Schema definition
 I use reference where I can create an object in real life in a seperate screen from the parent object. For instance, in an application where I can create product seperately from categories, I will add a'categoryId' field in product.
 
 Here, I prefer to embed documents and give up on normalization, as i don't want to create email or phone seperately from user or contact. Here are the code for user and email, for instance:
-
 
 ```
 const UserSchema = new Schema({
@@ -40,10 +40,10 @@ const UserSchema = new Schema({
 }, {
     timestamps: true
 });
-```
 
-`const EmailSchema = new Schema({
+const EmailSchema = new Schema({
     address: String,
     isDefault: Boolean
-});`
+});
+```
 
