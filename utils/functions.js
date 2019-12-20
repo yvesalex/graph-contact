@@ -1,5 +1,3 @@
-const User = require('../models/user');
-const exec = require('child_process').exec;
 const execSync = require('child_process').execSync;
 
 const getIP = () => {
